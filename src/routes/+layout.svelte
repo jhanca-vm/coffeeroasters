@@ -1,6 +1,7 @@
 <script>
+  import '@fontsource/barlow/latin-400.css'
+  import '@fontsource/barlow/latin-700.css'
   import '@fontsource-variable/fraunces'
-  import '@fontsource/barlow'
   import { fade } from 'svelte/transition'
   import logo from '$lib/assets/logo.webp'
   import menu from '$lib/assets/icons/menu.svg'
@@ -11,31 +12,27 @@
 </script>
 
 <header
-  class="top-0 flex items-center justify-between bg-default-100 pb-10 pt-8
-    sm:pb-13 sm:pt-10 lg:py-11"
+  class="top-0 z-10 flex items-center justify-between bg-default-100 pb-10
+    pt-8 sm:static sm:pb-13 sm:pt-10 lg:py-11"
   class:sticky={!menuIsHidden}
 >
-  <a class="w-41 sm:w-[14.75rem]" href="/">
+  <a class="w-41 sm:w-59" href="/">
     <img src={logo} alt="Coffeeroasters" width="237" height="27" />
   </a>
   <button class="sm:hidden" on:click={() => (menuIsHidden = !menuIsHidden)}>
     {#if menuIsHidden}
-      <img class="w-4" src={menu} alt="Open Menu" width="16" height="15" />
+      {@const size = { width: 16, height: 15 }}
+      <img class="w-4" src={menu} alt="Open menu" {...size} loading="lazy" />
     {:else}
-      <img
-        in:fade={{ duration: 300 }}
-        class="w-3.5"
-        src={close}
-        alt="Close Menu"
-        width="14"
-        height="13"
-      />
+      {@const parameters = { duration: 300 }}
+      {@const [alt, size] = ['Close menu', { width: 14, height: 13 }]}
+      <img in:fade={parameters} class="w-3.5" src={close} {alt} {...size} />
     {/if}
   </button>
   <nav
-    class="fixed inset-x-0 bottom-0 top-22.5 animate-fade-down bg-gradient-to-b
-      from-default-100 from-40% to-default-100/50 animate-duration-300
-      sm:static sm:block sm:animate-none"
+    class="fixed inset-x-0 top-22.5 h-screen animate-fade-down bg-gradient-to-b
+      from-default-100 from-35% to-default-100/50 animate-duration-300
+      sm:static sm:block sm:h-auto sm:animate-none"
     class:hidden={menuIsHidden}
   >
     <ul

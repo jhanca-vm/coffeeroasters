@@ -1,5 +1,7 @@
 # Coffeeroasters
 
+Coffee subscription website.
+
 ## Developing
 
 Once you've installed dependencies with `pnpm install`, start a development

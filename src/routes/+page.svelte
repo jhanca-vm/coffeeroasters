@@ -1,5 +1,9 @@
 <script>
-  import Hero from './home/hero.svelte'
+  import Hero from './hero.svelte'
+  import Products from './products.svelte'
+  import Features from './features.svelte'
+
+  export let data
 </script>
 
 <svelte:head>
@@ -13,3 +17,5 @@
 </svelte:head>
 
 <Hero />
+<Products data={data.products} />
+<Features data={data.features} />

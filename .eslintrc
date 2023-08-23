@@ -11,8 +11,5 @@
       "parser": "svelte-eslint-parser",
       "parserOptions": { "parser": { "ts": "@typescript-eslint/parser" } }
     }
-  ],
-  "rules": {
-    "unicorn/no-useless-undefined": "off"
-  }
+  ]
 }
