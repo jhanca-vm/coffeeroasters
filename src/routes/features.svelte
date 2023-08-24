@@ -13,8 +13,8 @@
     xl:px-0 xl:pt-25 xl:before:h-[79%]"
 >
   <h2
-    class="font-serif text-[1.75rem] font-black leading-none sm:text-[2rem]
-      sm:leading-normal xl:text-[2.5rem] xl:leading-[1.2]"
+    class="text-[1.75rem] leading-none sm:text-[2rem] sm:leading-normal
+      xl:text-[2.5rem] xl:leading-[1.2]"
   >
     Why choose us?
   </h2>
@@ -43,9 +43,7 @@
           loading="lazy"
         />
         <div>
-          <h3
-            class="mb-6 mt-14 font-serif text-2xl font-black @lg:mb-4 @lg:mt-0"
-          >
+          <h3 class="mb-6 mt-14 text-2xl @lg:mb-4 @lg:mt-0">
             {name}
           </h3>
           <p class="w-53 text-base sm:w-auto xl:mx-auto xl:w-64 @md:text-sm">

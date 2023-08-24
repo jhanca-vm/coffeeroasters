@@ -9,8 +9,8 @@
 <section class="mb-30 mt-26 text-center md:my-36 lg:my-50">
   <h2
     class="bg-default-200 bg-gradient-to-b from-default-100/5 to-default-100
-      bg-clip-text font-serif text-[2.5rem] font-black lowercase leading-[1.8]
-      text-transparent sm:from-[-80%] sm:leading-none lg:text-[9.375rem]"
+      bg-clip-text text-[2.5rem] lowercase leading-[1.8] text-transparent
+      sm:from-[-80%] sm:leading-none lg:text-[9.375rem]"
   >
     Our collection
   </h2>
@@ -29,7 +29,7 @@
           loading="lazy"
         />
         <div class="mt-6 sm:mt-4 lg:mt-18 @md:text-left">
-          <h3 class="mb-4 font-serif text-2xl font-black sm:mb-6">
+          <h3 class="mb-4 text-2xl sm:mb-6">
             {name}
           </h3>
           <p class="mx-auto w-72 lg:w-auto">{description}</p>

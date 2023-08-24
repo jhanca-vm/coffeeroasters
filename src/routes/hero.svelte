@@ -14,13 +14,7 @@
       curated artisan coffees from our best roasters delivered directly to your
       door, at your schedule.
     </p>
-    <a
-      class="inline-flex h-14 items-center rounded-md bg-primary-200 px-8
-        text-lg transition-colors hover:bg-primary-100/80"
-      href="/subscribe"
-    >
-      Create your plan
-    </a>
+    <a class="btn" href="/subscribe"> Create your plan </a>
   </div>
 </section>
 
@@ -29,12 +23,6 @@
     background-color: #191919;
     background-image: url('$lib/assets/coffeepress-sm.jpg');
     height: theme(spacing.125);
-  }
-
-  h1,
-  a {
-    font-family: theme(fontFamily.serif);
-    font-weight: 900;
   }
 
   @media screen(sm) {
