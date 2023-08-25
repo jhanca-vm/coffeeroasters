@@ -7,17 +7,11 @@
 </script>
 
 <section
-  class="relative my-30 px-6 pt-16 text-center text-default-100 before:absolute
-    before:inset-0 before:-z-10 before:h-3/5 before:rounded-xl
-    before:bg-default-350 sm:px-14 sm:pt-14 sm:before:h-2/3 md:my-36 lg:my-50
-    xl:px-0 xl:pt-25 xl:before:h-[79%]"
+  class="bg-before relative my-30 px-6 pt-16 text-center text-default-100
+    before:inset-0 before:h-3/5 sm:px-14 sm:pt-14 sm:before:h-2/3 md:my-36
+    lg:my-50 xl:px-0 xl:pt-25 xl:before:h-[79%]"
 >
-  <h2
-    class="text-[1.75rem] leading-none sm:text-[2rem] sm:leading-normal
-      xl:text-[2.5rem] xl:leading-[1.2]"
-  >
-    Why choose us?
-  </h2>
+  <h2 class="text-3xl sm:text-4xl xl:text-5xl">Why choose us?</h2>
   <p
     class="mx-auto mb-16 mt-6 max-w-[31rem] opacity-80 sm:mb-17.5
       lg:max-w-[33rem] xl:mb-21.5 xl:mt-8"

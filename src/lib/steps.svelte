@@ -36,7 +36,7 @@
   {#each data as { step, description }, index}
     <article class="md:row-start-2">
       <svg
-        class="relative z-10 mb-12 hidden 
+        class="relative z-10 mb-12 hidden
           {dark ? 'fill-none' : 'fill-default-100'} 
           stroke-primary-200 stroke-2 md:block lg:mb-16.5"
         xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,8 @@
         0{index + 1}
       </span>
       <h3
-        class="my-6 text-[1.75rem] leading-8 md:my-10 md:max-w-[13rem]
-          lg:mb-10.5 lg:mt-9.5 lg:text-[2rem] lg:leading-9"
+        class="my-6 text-3xl leading-8 md:my-10 md:max-w-[13rem] lg:mb-10.5
+          lg:mt-9.5 lg:text-4xl lg:leading-9"
       >
         {step}
       </h3>

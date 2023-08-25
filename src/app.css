@@ -14,6 +14,21 @@
 }
 
 @layer components {
+  .hero {
+    background-size: cover;
+    border-radius: 0.625rem;
+    color: theme(colors.default.100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .hero :where(p) {
+    opacity: 0.8;
+  }
+
   .btn {
     background-color: theme(colors.primary.200);
     border-radius: theme(borderRadius.md);
@@ -29,5 +44,26 @@
 
   .btn:hover {
     background-color: theme(colors.primary.100);
+  }
+
+  .bg-before::before {
+    background-color: theme(colors.default.350);
+    border-radius: theme(borderRadius.xl);
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media screen(sm) {
+    .hero {
+      padding: 3.5rem;
+      text-align: left;
+    }
+  }
+
+  @media screen(lg) {
+    .hero {
+      padding: 5.25rem;
+    }
   }
 }

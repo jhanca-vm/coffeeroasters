@@ -23,11 +23,23 @@ model Feature {
   imageId     Int    @unique
 }
 
+model Headquarter {
+  id      Int    @id @default(autoincrement())
+  country String
+  address String
+  city    String
+  state   String
+  phone   String
+  image   Image  @relation(fields: [imageId], references: [id])
+  imageId Int    @unique
+}
+
 model Image {
-  id      Int      @id @default(autoincrement())
-  source  String
-  width   Int
-  height  Int
-  product Product?
-  feature Feature?
+  id          Int          @id @default(autoincrement())
+  source      String
+  width       Int
+  height      Int
+  product     Product?
+  feature     Feature?
+  headquarter Headquarter?
 }

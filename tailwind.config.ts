@@ -29,7 +29,11 @@ const config: Config = {
         xs: ['0.75rem', '1.25'],
         sm: ['0.9375rem', '1.625'],
         base: ['1rem', '1.625rem'],
-        lg: ['1.125rem', '1.5625rem']
+        lg: ['1.125rem', '1.5625rem'],
+        '3xl': ['1.75rem', '1'],
+        '4xl': ['2rem', '1.5'],
+        '5xl': ['2.5rem', '1.2'],
+        '6xl': ['3rem', '1']
       },
       letterSpacing: {
         widest: '0.07691666em'

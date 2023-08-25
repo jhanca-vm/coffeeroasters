@@ -9,7 +9,7 @@
 <section class="mb-30 mt-26 text-center md:my-36 lg:my-50">
   <h2
     class="bg-default-200 bg-gradient-to-b from-default-100/5 to-default-100
-      bg-clip-text text-[2.5rem] lowercase leading-[1.8] text-transparent
+      bg-clip-text text-5xl lowercase leading-[1.8] text-transparent
       sm:from-[-80%] sm:leading-none lg:text-[9.375rem]"
   >
     Our collection
