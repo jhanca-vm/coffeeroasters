@@ -11,5 +11,9 @@
       "parser": "svelte-eslint-parser",
       "parserOptions": { "parser": { "ts": "@typescript-eslint/parser" } }
     }
-  ]
+  ],
+  "env": { "browser": true },
+  "rules": {
+    "svelte/no-at-html-tags": "off"
+  }
 }

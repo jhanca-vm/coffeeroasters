@@ -7,9 +7,22 @@
     min-width: 375px;
   }
 
-  :is(h1, h2, h3, .btn) {
+  summary {
+    cursor: default;
+    list-style: none;
+  }
+
+  :is(h1, h2, h3, strong, summary, .btn) {
     font-family: theme(fontFamily.serif);
     font-weight: 900;
+  }
+
+  [aria-disabled='true'] {
+    pointer-events: none;
+  }
+
+  dialog::backdrop {
+    background-color: theme(colors.black / 50%);
   }
 }
 
@@ -44,6 +57,10 @@
 
   .btn:hover {
     background-color: theme(colors.primary.100);
+  }
+
+  .btn:disabled {
+    background-color: #e2dedb;
   }
 
   .bg-before::before {

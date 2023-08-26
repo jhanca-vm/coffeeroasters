@@ -43,3 +43,17 @@ model Image {
   feature     Feature?
   headquarter Headquarter?
 }
+
+model Question {
+  id      String   @unique
+  label   String
+  options Option[]
+}
+
+model Option {
+  id          Int      @id @default(autoincrement())
+  value       String
+  description String
+  question    Question @relation(fields: [questionId], references: [id])
+  questionId  String
+}
